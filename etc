@@ -1,7 +1,12 @@
-body {background-color: hsl(207, 100%, 73%);}
-h1 {font-size:35px;font-family:Arial;}
-h2 {font-family:Arial;font-size:20px;}
+<div class="btn-group">
+        <button class="button">Noticia 1</button>
+        <button class="button">Noticia 2</button>
+        <button class="button">Noticia 3</button>
 
+    </div>
+
+
+    <style>
         .btn-group .button {
           background-color: #04AA6D; /* Green */
           border: none;
@@ -18,4 +23,4 @@ h2 {font-family:Arial;font-size:20px;}
         .btn-group .button:hover {
           background-color: #3e8e41;
         }
-       
+        </style>

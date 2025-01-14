@@ -1,5 +1,17 @@
 
-            body {background-color: hsl(207, 100%, 73%);}
-            h2 {font-family:Arial;font-size:20px;border: 2px solid rgb(0, 255, 255)}
-            p {font-family: Arial;font-size: 16px;border: 2px solid rgb(25, 88, 134)}
+body {
+
+    background-color: hsl(207, 100%, 73%);
+
+    font-family: Arial, sans-serif; /* Asegúrate de que el cuerpo tenga una fuente legible */
+
+}
+
+            .noticia-container {
+
+                background-color: white; /* Fondo blanco para la noticia */
             
+                border: 2px solid rgb(25, 88, 134); /* Borde alrededor de la noticia */
+            
+                border-radius: 10px; /* Bordes redondeados */
+            }

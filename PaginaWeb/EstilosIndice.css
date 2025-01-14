@@ -1,5 +1,10 @@
-/* EstilosIndice.css */
-body {background-color: hsl(207, 100%, 73%);}
+
+
+body {
+  background-color: hsl(207, 100%, 73%);
+  
+
+}
 
 .btn-group {
   display: flex;

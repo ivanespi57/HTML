@@ -3,15 +3,16 @@ body {
 
     background-color: hsl(207, 100%, 73%);
 
-    font-family: Arial, sans-serif; /* Asegúrate de que el cuerpo tenga una fuente legible */
+    font-family: Arial, sans-serif; 
 
 }
+.flotante {
 
-            .noticia-container {
+    float: left; 
 
-                background-color: white; /* Fondo blanco para la noticia */
-            
-                border: 2px solid rgb(25, 88, 134); /* Borde alrededor de la noticia */
-            
-                border-radius: 10px; /* Bordes redondeados */
-            }
+    height: 400px; 
+
+    margin: 10px; 
+
+    width: 625px; 
+}

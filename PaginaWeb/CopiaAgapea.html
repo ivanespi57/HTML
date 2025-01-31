@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de Libros</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Don Quijote Books</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .book {
+      width: 250px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .book img {
+      width: 100%;
+      height: auto;
+    }
+
+    .book h3 {
+      margin-top: 10px;
+    }
+
+    .book p {
+      margin-bottom: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Agapea</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="busqueda">
-            <h2>Buscar Libros</h2>
-            <form action="#" method="GET">
-                <input type="text" name="texto" placeholder="Buscar por título, autor o ISBN" required>
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
+  <div class="container">
+    <div class="book">
+      <img src="https://i.imgur.com/7xYpK16.jpg" alt="Don Quijote - Cucaña">
+      <h3>Don Quijote - Cucaña</h3>
+      <p>Miguel de Cervantes Saavedra; Agustín Sánchez Aguilar</p>
+      <p>160 páginas</p>
+      <p>Editorial Vicens Vives</p>
+      <p>Entrega: 24 a 48 h</p>
+      <button class="button">Comprar libro</button>
+    </div>
 
-        <section class="resultados">
-            <h2>Resultados de Búsqueda</h2>
-            <div class="resultado">
-                <img src="libro1.jpg" alt="Don Quijote de la Mancha">
-                <h3><a href="#">Don Quijote de la Mancha</a></h3>
-                <p>Autor: Miguel de Cervantes</p>
-                <p>Precio: $20.00</p>
-                <button>Añadir al Carrito</button>
-            </div>
-            <div class="resultado">
-                <img src="libro2.jpg" alt="Don Quijote de la Mancha - Edición Especial">
-                <h3><a href="#">Don Quijote de la Mancha - Edición Especial</a></h3>
-                <p>Autor: Miguel de Cervantes</p>
-                <p>Precio: $25.00</p>
-                <button>Añadir al Carrito</button>
-            </div>
-            <!-- Agrega más resultados según sea necesario -->
-        </section>
-    </main>
+    <div class="book">
+      <img src="https://i.imgur.com/876j79V.jpg" alt="Don Quijote De La Mancha">
+      <h3>Don Quijote De La Mancha</h3>
+      <p>Arturo Pérez-Reverte; Miguel de Cervantes Saavedra; Real Academia Española</p>
+      <p>592 páginas</p>
+      <p>Editorial Alfaguara</p>
+      <p>Entrega: 24 a 48 h</p>
+      <button class="button">Comprar libro</button>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Agapea. Todos los derechos reservados.</p>
-    </footer>
+    <div class="book">
+      <img src="https://i.imgur.com/3Z5g5gD.jpg" alt="Don Quijote - Edición Especial">
+      <h3>Don Quijote - Edición Especial</h3>
+      <p>Miguel de Cervantes Saavedra; Ediciones Cátedra</p>
+      <p>800 páginas</p>
+      <p>Editorial Cátedra</p>
+      <p>Entrega: 24 a 48 h</p>
+      <button class="button">Comprar libro</button>
+    </div>
+  </div>
+
 </body>
 </html>

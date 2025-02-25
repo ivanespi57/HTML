@@ -48,6 +48,19 @@
         .button:hover {
             background-color: #45a049;
         }
+        /* Estilos para las columnas de la tabla */
+        .number-column {
+            width: 10%; /* Ancho de la columna de números */
+        }
+        .author-column {
+            width: 30%; /* Ancho de la columna del autor */
+        }
+        .title-column {
+            width: 50%; /* Ancho de la columna del título */
+        }
+        .price-column {
+            width: 20%; /* Ancho de la columna del precio */
+        }
     </style>
 </head>
 <body>
@@ -69,39 +82,46 @@
 
     <table>
         <tr>
-            <th>Autor</th>
-            <th>Título del Libro</th>
-            <th>Precio</th>
+            <th class="number-column">#</th> <!-- Nueva columna para los números -->
+            <th class="author-column">Autor</th>
+            <th class="title-column">Título del Libro</th>
+            <th class="price-column">Precio</th>
         </tr>
         <tr>
-            <td>Gabriel García Márquez</td>
-            <td>Cien años de soledad</td>
-            <td>15.99 €</td>
+            <td class="number-column">1</td>
+            <td class="author-column">Gabriel García Márquez</td>
+            <td class="title-column">Cien años de soledad</td>
+            <td class="price-column">15.99 €</td>
         </tr>
         <tr>
-            <td>J.K. Rowling</td>
-            <td>Harry Potter y la piedra filosofal</td>
-            <td>12.99 €</td>
+            <td class="number-column">2</td>
+            <td class="author-column">J.K. Rowling</td>
+            <td class="title-column">Harry Potter y la piedra filosofal</td>
+            <td class="price-column">12.99 €</td>
         </tr>
         <tr>
-            <td>George Orwell</td>
-            <td>1984</td>
-            <td>10.50 €</td>
+            <td class="number-column">3</td>
+            <td class="author-column">George Orwell</td>
+            <td class="title-column">1984</td>
+            <td class="price-column">10.50 €</td>
         </tr>
         <tr>
-            <td>Jane Austen</td>
-            <td>Orgullo y prejuicio</td>
-            <td>9.99 €</td>
+            <td class="number-column">4</td>
+            <td class="author-column">Jane Austen</td>
+            <td class="title-column">Orgullo y prejuicio</td>
+            <td class="price-column">9.99 € </td>
         </tr>
         <tr>
-            <td>F. Scott Fitzgerald</td>
-            <td>El gran Gatsby</td>
-            <td>14.50 €</td>
+            <td class="number-column">5</td>
+            <td class="author-column">F. Scott Fitzgerald</td>
+            <td class="title-column">El gran Gatsby</td>
+            <td class="price-column">14.50 €</td>
         </tr>
         <tr>
-            <td>Harper Lee</td>
-            <td>To Kill a Mockingbird</td>
-            <td>11.75 €</td>
+            <td class="number-column">6</td>
+            <td class="author-column">Harper Lee</td>
+            <td class="title-column">To Kill a Mockingbird</td>
+            <td class="price-column">11.75 €</td>
         </tr>
     </table>
 

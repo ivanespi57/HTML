@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Noticias de Libros</title>
@@ -28,13 +27,13 @@
             color: rgb(24, 24, 24);
         }
         tr {
-            border-bottom: 3px solid #66b3ff; /* Línea divisoria entre filas */
+            border-bottom: 3px solid #66b3ff;
         }
         tr:nth-child(even) {
             background-color: #cce5ff;
         }
         tr:hover {
-            background-color: #b3d7ff; /* Color de fondo al pasar el ratón */
+            background-color: #b3d7ff;
         }
         .button {
             display: inline-block;
@@ -50,78 +49,124 @@
         .button:hover {
             background-color: #5a9bd4;
         }
-        /* Estilos para las columnas alternas */
-        td:nth-child(odd), th:nth-child(odd) {
-            background-color: #fcb6b6;
+        /* Estilos para la primera columna */
+        td:first-child, th:first-child {
+            background-color: #ffcccb;
+        }
+        /* Estilos para el resto de columnas */
+        td:not(:first-child), th:not(:first-child) {
+            background-color: #f5f5f5;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        nav li {
+            display: inline;
         }
     </style>
 </head>
-<body>
+<body><h1>Lista de Libros Recomendados</h1>
 
-    <h1>Lista de Libros Recomendados</h1>
+<nav>
+    <ul>
+        <li><a href="Indice.html" class="button active">Índice</a></li>
+        <li><a href="Noticia1.html" class="button">Noticia 1</a></li>
+        <li><a href="Noticia2.html" class="button">Noticia 2</a></li>
+        <li><a href="Noticia3.html" class="button">Noticia 3</a></li>
+        <li><a href="Ventas.html" class="button">Ventas</a></li>
+        <li><a href="libros.html" class="button">Libros</a></li>
+    </ul>
+</nav>
 
-    <table>
-        <tr>
-            <td><a href="Indice.html" class="button active">Índice</a></td>
-            <td><a href="Noticia1.html" class="button">Noticia 1</a></td>
-            <td><a href="Noticia2.html" class="button">Noticia 2</a></td>
-            <td><a href="Noticia3.html" class="button">Noticia 3</a></td>
-            <td><a href="Ventas.html" class="button">Ventas</a></td>
-            <td><a href="libros.html" class="button">Libros</a></td>
-        </tr>
-    </table>
+<p>A continuación se presenta una lista de autores, títulos de libros y sus precios:</p>
 
-    <p>A continuación se presenta una lista de autores, títulos de libros y sus precios:</p>
+<table>
+    <caption>Lista de Libros Recomendados</caption>
+    <tr>
+        <th>#</th>
+        <th>Autor</th>
+        <th>Título del Libro</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td rowspan="2">1</td>
+        <td rowspan="2">Gabriel García Márquez</td>
+        <td>Cien años de soledad</td>
+        <td>15.99 €</td>
+    </tr>
+    <tr>
+        <td>El otoño del patriarca</td>
+        <td>12.50 €</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>J.K. Rowling</td>
+        <td>Harry Potter y la piedra filosofal</td>
+        <td>12.99 €</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>George Orwell</td>
+        <td>1984</td>
+        <td>10.50 €</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Jane Austen</td>
+        <td>Orgullo y prejuicio</td>
+        <td>9.99 €</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>El gran Gatsby</td>
+        <td>14.50 €</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Harper Lee</td>
+        <td>To Kill a Mockingbird</td>
+        <td>11.75 €</td>
+    </tr>
+</table>
 
-    <table>
-        <caption>Lista de Libros Recomendados</caption>
-        <tr>
-            <th>#</th>
-            <th>Autor</th>
-            <th>Título del Libro</th>
-            <th>Precio</th>
-        </tr>
-        <tr>
-            <td rowspan="2">1</td>
-            <td rowspan="2">Gabriel García Márquez</td>
-            <td>Cien años de soledad</td>
-            <td>15.99 €</td>
-        </tr>
-        <tr>
-            <td>El otoño del patriarca</td>
-            <td>12.50 €</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>J.K. Rowling</td>
-            <td>Harry Potter y la piedra filosofal</td>
-            <td>12.99 €</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>George Orwell</td>
-            <td>1984</td>
-            <td>10.50 €</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Jane Austen</td>
-            <td>Orgullo y prejuicio</td>
-            <td>9.99 €</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>F. Scott Fitzgerald</td>
-            <td>El gran Gatsby</td>
-            <td>14.50 €</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>Harper Lee</td>
-            <td>To Kill a Mockingbird</td>
-            <td>11.75 €</td>
-        </tr>
-    </table>
+<h2>Lista de Autores y sus Obras</h2>
+<ol>
+    <li>Gabriel García Márquez
+        <ul>
+            <li>Cien años de soledad</li>
+            <li>El otoño del patriarca</li>
+        </ul>
+    </li>
+    <li>J.K. Rowling
+        <ul>
+            <li>Harry Potter y la piedra filosofal</li>
+        </ul>
+    </li>
+    <li>George Orwell
+        <ul>
+            <li>1984</li>
+        </ul>
+    </li>
+    <li>Jane Austen
+        <ul>
+            <li>Orgullo y prejuicio</li>
+        </ul>
+    </li>
+    <li>F. Scott Fitzgerald
+        <ul>
+            <li>El gran Gatsby</li>
+        </ul>
+    </li>
+    <li>Harper Lee
+        <ul>
+            <li>To Kill a Mockingbird</li>
+        </ul>
+    </li>
+</ol>
 
 </body>
 </html>

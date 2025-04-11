@@ -1,18 +1,93 @@
-
 body {
-
-    background-color: hsl(207, 100%, 73%);
-
-    font-family: Arial, sans-serif; 
-
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
+
 .flotante {
+    float: right;
+    margin: 10px;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+}
 
-    float: left; 
+.noticia {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    height: 400px; 
+/* Añado estilos específicos para la noticia de GTA 6 */
+.noticia-gta6 {
+    background-color: #fff8e1;
+    border-color: #ffcc80;
+}
 
-    margin: 10px; 
+.titulo {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-    width: 625px; 
+.titulo-gta6 {
+    color: #d84315;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo-gta6 {
+    color: #ff7043;
+}
+
+.noticia h1 {
+    font-size: 28px;
+    color: #1565c0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noticia h2 {
+    font-size: 22px;
+    color: #5c6bc0;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.noticia a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.noticia a:hover {
+    color: #0d47a1;
+}
+
+.noticia p {
+    line-height: 1.8;
+    color: #424242;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #90caf9;
+    margin: 30px 0;
 }

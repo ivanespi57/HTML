@@ -1,5 +1,85 @@
+body {
+    background-color: hsl(50, 100%, 90%);
+    font-family: 'Georgia', serif;
+}
 
-    body {background-color: hsl(207, 79%, 61%);text-align: center;}
-    h1 {font-size:35px;font-family:Arial;text-align: center;}
-    h2 {font-family:Arial;font-size:22px;border: 2px solid rgb(0, 255, 255);text-align: center;}
-    p {font-family: Arial;font-size: 16px;border: 2px solid rgb(25, 88, 134);text-align: center;}
+h1 {
+    font-size: 35px;
+    font-family: Arial;
+    text-align: center;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 22px;
+    text-align: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 16px;
+    text-align: center;
+}
+
+.noticia {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: linear-gradient(135deg, #fffbe6, #fff2cc);
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h1 {
+    font-size: 26px;
+    color: #cc9900;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noticia h2 {
+    font-size: 20px;
+    color: #996600;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.noticia p {
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.noticia a {
+    color: #cc9900;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.noticia a:hover {
+    color: #996600;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ffcc00;
+    margin: 20px 0;
+}
+
+/* Añado estilos específicos para la noticia de Lorca */
+.noticia-lorca {
+    background: linear-gradient(135deg, #fbe6ff, #f2ccff);
+    border-color: #cc99ff;
+}
+
+.titulo-lorca {
+    color: #9933cc;
+}
+
+.subtitulo-lorca {
+    color: #cc66ff;
+}

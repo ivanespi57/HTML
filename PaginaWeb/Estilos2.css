@@ -72,7 +72,7 @@ hr {
 
 /* Añado estilos específicos para la noticia de Lorca */
 .noticia-lorca {
-    background: linear-gradient(135deg, #fbe6ff, #f2ccff);
+    background:  #e5ccfd;
     border-color: #cc99ff;
 }
 

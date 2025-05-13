@@ -1,18 +1,269 @@
-
 body {
-
-    background-color: hsl(207, 100%, 73%);
-
-    font-family: Arial, sans-serif; 
-
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
+
 .flotante {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ff9800;
+}
 
-    float: left; 
+.noticia {
+    position: relative; 
+    
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    max-height: 400px; 
+    
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; 
+    
+    overflow: auto; 
+    
+    overflow-x: auto; 
+    
+    word-wrap: break-word;
+    
+}
 
-    height: 400px; 
+.noticia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Fotos/firma.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: -1; 
+    border-radius: 10px;
+}
 
-    margin: 10px; 
+/* Añado estilos específicos para la noticia de GTA 6 */
+.noticia-gta6 {
+    background-color: #fff8e1;
+    border-color: #ffcc80;
+}
 
-    width: 625px; 
+.titulo {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titulo-gta6 {
+    color: #d84315;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitulo-gta6 {
+    color: #ff7043;
+}
+
+.noticia h1 {
+    font-size: 28px;
+    color: #1565c0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.noticia h2 {
+    font-size: 22px;
+    color: #5c6bc0;
+    font-style: italic;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.noticia a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.noticia a:hover {
+    color: #0d47a1;
+}
+
+.noticia p {
+    line-height: 1.8;
+    color: #424242;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #90caf9;
+    margin: 30px 0;
+}
+
+.sticky-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100%; 
+    width: 200px; 
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 20px; 
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sticky-sidebar a {
+    display: block;
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 20px; 
+    font-size: 18px; 
+    transition: color 0.3s;
+}
+
+.sticky-sidebar a:hover {
+    color: #0d47a1;
+}
+
+.noticia-contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.noticia-original, .noticia-traduccion {
+    width: 48%; 
+    float: left;
+    background-color: #fff8e1;
+    padding: 15px;
+    border: 1px solid #ffcc80;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia-traduccion {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+}
+
+.form-busqueda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.campo-busqueda {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.boton-busqueda {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-busqueda:hover {
+    background-color: #0d47a1;
+}
+
+.valoracion {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9fbe7;
+    border: 1px solid #c5e1a5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.valoracion p {
+    font-size: 18px;
+    color: #33691e;
+    margin-bottom: 10px;
+}
+
+.boton-valoracion {
+    background-color: #8bc34a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-valoracion:hover {
+    background-color: #558b2f;
+}
+
+.suscripcion {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.suscripcion p {
+    font-size: 18px;
+    color: #1565c0;
+    margin-bottom: 10px;
+}
+
+.suscripcion input[type="email"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.boton-suscripcion {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-suscripcion:hover {
+    background-color: #0d47a1;
 }

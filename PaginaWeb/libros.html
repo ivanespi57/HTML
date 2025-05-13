@@ -1,129 +1,172 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias de Libros</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
+            background-color: #e7f3ff; 
         }
         h1 {
-            color: #333;
+            color: #003366; 
         }
         table {
-            width: 80%; /* Cambia el ancho total de la tabla de libros */
+            width: 80%;
             border-collapse: collapse;
             margin-top: 20px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         th, td {
-            border: 2px solid #4CAF50;
             padding: 8px;
             text-align: left;
-            height: 50px; /* Aumenta la altura de las filas */
+            height: 50px;
         }
         th {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #66b3ff;
+            color: rgb(24, 24, 24);
+        }
+        tr {
+            border-bottom: 3px solid #66b3ff;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2;
+            background-color: #cce5ff;
         }
         tr:hover {
-            background-color: #ddd;
+            background-color: #b3d7ff;
         }
         .button {
             display: inline-block;
-            padding: 10px 15px;
-            margin: 5px;
-            background-color: #4CAF50;
+            padding: 15px 20px;
+            margin: 10px;
+            background-color: #66b3ff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
+            font-size: 16px;
         }
         .button:hover {
-            background-color: #45a049;
+            background-color: #5a9bd4;
         }
-        /* Estilos para las columnas de la tabla */
-        .number-column {
-            width: 10%; /* Ancho de la columna de números */
+        /* Estilos para la primera columna */
+        td:first-child, th:first-child {
+            background-color: #ffcccb;
         }
-        .author-column {
-            width: 30%; /* Ancho de la columna del autor */
+        /* Estilos para el resto de columnas */
+        td:not(:first-child), th:not(:first-child) {
+            background-color: #f5f5f5;
         }
-        .title-column {
-            width: 50%; /* Ancho de la columna del título */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
         }
-        .price-column {
-            width: 20%; /* Ancho de la columna del precio */
+        nav li {
+            display: inline;
         }
     </style>
 </head>
-<body>
+<body><h1>Lista de Libros Recomendados</h1>
 
-    <h1>Lista de Libros Recomendados</h1>
+<nav>
+    <ul>
+        <li><a href="Indice.html" class="button active">Índice</a></li>
+        <li><a href="Noticia1.html" class="button">Noticia 1</a></li>
+        <li><a href="Noticia2.html" class="button">Noticia 2</a></li>
+        <li><a href="Noticia3.html" class="button">Noticia 3</a></li>
+        <li><a href="Ventas.html" class="button">Ventas</a></li>
+        <li><a href="libros.html" class="button">Libros</a></li>
+    </ul>
+</nav>
 
-    <table>
-        <tr>
-            <td><a href="Indice.html" class="button active">Índice</a></td>
-            <td><a href="Noticia1.html" class="button">Noticia 1</a></td>
-            <td><a href="Noticia2.html" class="button">Noticia 2</a></td>
-            <td><a href="Noticia3.html" class="button">Noticia 3</a></td>
-            <td><a href="Ventas.html" class="button">Ventas</a></td>
-            <td><a href="libros.html" class="button">Libros</a></td>
-        </tr>
-    </table>
+<p>A continuación se presenta una lista de autores, títulos de libros y sus precios:</p>
 
-    <p>A continuación se presenta una lista de autores, títulos de libros y sus precios:</p>
+<table>
+    <caption>Lista de Libros Recomendados</caption>
+    <tr>
+        <th>#</th>
+        <th>Autor</th>
+        <th>Título del Libro</th>
+        <th>Precio</th>
+    </tr>
+    <tr>
+        <td rowspan="2">1</td>
+        <td rowspan="2">Gabriel García Márquez</td>
+        <td>Cien años de soledad</td>
+        <td>15.99 €</td>
+    </tr>
+    <tr>
+        <td>El otoño del patriarca</td>
+        <td>12.50 €</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>J.K. Rowling</td>
+        <td>Harry Potter y la piedra filosofal</td>
+        <td>12.99 €</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>George Orwell</td>
+        <td>1984</td>
+        <td>10.50 €</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Jane Austen</td>
+        <td>Orgullo y prejuicio</td>
+        <td>9.99 €</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>El gran Gatsby</td>
+        <td>14.50 €</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Harper Lee</td>
+        <td>To Kill a Mockingbird</td>
+        <td>11.75 €</td>
+    </tr>
+</table>
 
-    <table>
-        <tr>
-            <th class="number-column">#</th> <!-- Nueva columna para los números -->
-            <th class="author-column">Autor</th>
-            <th class="title-column">Título del Libro</th>
-            <th class="price-column">Precio</th>
-        </tr>
-        <tr>
-            <td class="number-column">1</td>
-            <td class="author-column">Gabriel García Márquez</td>
-            <td class="title-column">Cien años de soledad</td>
-            <td class="price-column">15.99 €</td>
-        </tr>
-        <tr>
-            <td class="number-column">2</td>
-            <td class="author-column">J.K. Rowling</td>
-            <td class="title-column">Harry Potter y la piedra filosofal</td>
-            <td class="price-column">12.99 €</td>
-        </tr>
-        <tr>
-            <td class="number-column">3</td>
-            <td class="author-column">George Orwell</td>
-            <td class="title-column">1984</td>
-            <td class="price-column">10.50 €</td>
-        </tr>
-        <tr>
-            <td class="number-column">4</td>
-            <td class="author-column">Jane Austen</td>
-            <td class="title-column">Orgullo y prejuicio</td>
-            <td class="price-column">9.99 € </td>
-        </tr>
-        <tr>
-            <td class="number-column">5</td>
-            <td class="author-column">F. Scott Fitzgerald</td>
-            <td class="title-column">El gran Gatsby</td>
-            <td class="price-column">14.50 €</td>
-        </tr>
-        <tr>
-            <td class="number-column">6</td>
-            <td class="author-column">Harper Lee</td>
-            <td class="title-column">To Kill a Mockingbird</td>
-            <td class="price-column">11.75 €</td>
-        </tr>
-    </table>
+<h2>Lista de Autores y sus Obras</h2>
+<ol>
+    <li>Gabriel García Márquez
+        <ul>
+            <li>Cien años de soledad</li>
+            <li>El otoño del patriarca</li>
+        </ul>
+    </li>
+    <li>J.K. Rowling
+        <ul>
+            <li>Harry Potter y la piedra filosofal</li>
+        </ul>
+    </li>
+    <li>George Orwell
+        <ul>
+            <li>1984</li>
+        </ul>
+    </li>
+    <li>Jane Austen
+        <ul>
+            <li>Orgullo y prejuicio</li>
+        </ul>
+    </li>
+    <li>F. Scott Fitzgerald
+        <ul>
+            <li>El gran Gatsby</li>
+        </ul>
+    </li>
+    <li>Harper Lee
+        <ul>
+            <li>To Kill a Mockingbird</li>
+        </ul>
+    </li>
+</ol>
 
 </body>
 </html>

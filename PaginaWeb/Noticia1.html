@@ -3,7 +3,7 @@
     
     <head>
         <title>Noticia1</title>
-        <link rel = "stylesheet" href = "Estilos1.css">
+        <link rel="stylesheet" href="Estilos1.css">
         <link rel="stylesheet" href="EstilosIndice.css">
         <link rel="icon" type="image/x-icon" href="/home/daw/Documentos/HTML/Fotos/Favicon.ico">
     </head>
@@ -12,55 +12,105 @@
     
     <body>
         
-        <div class="btn-group"> 
-            <a href="Indice.html" class="button">Índice</a> 
-            <a href="Noticia1.html" class="button active">Noticia 1</a> 
-            <a href="Noticia2.html" class="button">Noticia 2</a> 
-            <a href="Noticia3.html" class="button">Noticia 3</a> 
-            <a href="Ventas.html" class="button">Ventas</a>
-            <a href="libros.html" class="button">Libros</a>
+        <div class="sticky-sidebar">
+            <form action="buscar.html" method="get" class="form-busqueda">
+                <input type="text" name="query" placeholder="Buscar noticias..." class="campo-busqueda">
+                <button type="submit" class="boton-busqueda">Buscar</button>
+            </form>
+            <a href="Indice.html">Índice</a>
+            <a href="Noticia1.html">Noticia 1</a>
+            <a href="Noticia2.html">Noticia 2</a>
+            <a href="Noticia3.html">Noticia 3</a>
+            <a href="Ventas.html">Ventas</a>
+            <a href="libros.html">Libros</a>
         </div>
         
         <p style="font-family:Arial;color:darkorange">- Actualidad</p>
-       
-        <div class="noticia-container"></div>
-        <!--This is the title of the new-->
-       
-        <h1>Esta es la ridícula oferta que GTA 6 <br>ofrece a un artista para que su<br> canción aparezca en el juego</h1>
-       
-        <!--This is subtitle of the new -->
-        
-        <h2><i>El esperado título de Rockstar Games y la búsqueda de su banda sonora.</i></h2>
-        
-        <!--This is a image from the game trailer-->
-      
-        <img src="GTA6.jpg" class="flotante">
-       
-        <!--This is the text of the new, I have also put a hyperlink about another piece of new-->
-       
-        <p><br>
-            <a href="https://as.com/meristation/noticias/gta-6-dice-no-a-los-retrasos-y-confirma-su-ventana-de-lanzamiento-en-ps5-y-xbox-series-xs-n/">Grand Theft Auto 6</a> es posiblemente el juego más esperado del mundo, y cualquier 
-            <br>detalle entorno a lo que se espera sea una obra maestra llama enormemente la 
-            <br>atención. Lo último tiene que ver con su banda sonora y una canción que era candidata 
-            <br>a formar parte de la misma:<b> Temptation </b>del grupo británico <b>Heaven 17</b>, una de las 
-            <br>bandas pioneras del synth pop o tecno pop.</p>
-    
-        <p>Uno de los líderes de la banda es Martyn Ware, el cual usó su cuenta de X (Twitter) para<br>
-            contar su experiencia con <a href=https://as.com/meristation/noticias/asi-se-escribe-gta-6-como-se-hace-el-guion-de-los-juegos-de-grand-theft-auto-n>Rockstar Games</a> en torno a lo que en sus propias palabras es<br>
-            una “oferta ridícula” para <sub>que su canción</sub><sup> salga en GTA 6:</sup> “Recientemente mis editores<br>
-            se pusieron en contacto conmigo en nombre de Rockstar Games sobre la posibilidad<br>
-            de usar Temptation en el nuevo Grand Theft Auto 6. Naturalmente entusiasmado por<br>
-            la inmensa riqueza que estaba a punto de llegar a mi vida, me desplacé hasta el final<br>
-            del correo electrónico con la oferta”.</p>
-        <hr>
-   
-        <p><a href = "https://as.com/meristation/noticias/esta-es-la-ridicula-oferta-que-gta-6-ofrece-a-un-artista-para-que-su-cancion-aparezca-en-el-juego-n/">Para más información</a></p>
-        <a href = "Indice.html">
-        <img src = "FlechaAtras.png" style="width:42px;height:42px;">
-        </a>
+
+        <div class="noticia noticia-gta6">
+            <div class="noticia-contenido">
+                
+                <div class="noticia-original">
+                    <h1 class="titulo titulo-gta6">Esta es la ridícula oferta que GTA 6 <br>ofrece a un artista para que su<br> canción aparezca en el juego</h1>
+                    <h2 class="subtitulo subtitulo-gta6"><i>El esperado título de Rockstar Games y la búsqueda de su banda sonora.</i></h2>
+                    <img src="GTA6.jpg" class="flotante">
+                    <p>
+                        Grand Theft Auto 6 es posiblemente el juego más esperado del mundo, y cualquier 
+                        detalle entorno a lo que se espera sea una obra maestra llama enormemente la 
+                        atención. Lo último tiene que ver con su banda sonora y una canción que era candidata 
+                        a formar parte de la misma: <b>Temptation</b> del grupo británico <b>Heaven 17</b>.
+                    </p>
+                    <p>
+                        Uno de los líderes de la banda es Martyn Ware, el cual usó su cuenta de X (Twitter) para 
+                        contar su experiencia con <a href="https://as.com/meristation/noticias/asi-se-escribe-gta-6-como-se-hace-el-guion-de-los-juegos-de-grand-theft-auto-n">Rockstar Games</a> 
+                        en torno a lo que en sus propias palabras es 
+                        una “oferta ridícula” para que su canción salga en GTA 6: “Recientemente mis editores 
+                        se pusieron en contacto conmigo en nombre de Rockstar Games sobre la posibilidad 
+                        de usar Temptation en el nuevo Grand Theft Auto 6. Naturalmente entusiasmado por 
+                        la inmensa riqueza que estaba a punto de llegar a mi vida, me desplacé hasta el final 
+                        del correo electrónico con la oferta”.
+                    </p>
+                </div>
+
+                
+                <div class="noticia-traduccion">
+                    <h1 class="titulo titulo-gta6">This is the ridiculous offer that GTA 6 <br>makes to an artist for their<br> song to appear in the game</h1>
+                    <h2 class="subtitulo subtitulo-gta6"><i>The highly anticipated Rockstar Games title and the search for its soundtrack.</i></h2>
+                    <img src="GTA6.jpg" class="flotante">
+                    <p>
+                        Grand Theft Auto 6 is possibly the most anticipated game in the world, and any 
+                        detail about what is expected to be a masterpiece draws enormous attention. 
+                        The latest news is about its soundtrack and a song that was a candidate to be 
+                        part of it: <b>Temptation</b> by the British group <b>Heaven 17</b>.
+                    </p>
+                    <p>
+                        One of the band leaders, Martyn Ware, used his X (Twitter) account to share his 
+                        experience with <a href="https://as.com/meristation/noticias/asi-se-escribe-gta-6-como-se-hace-el-guion-de-los-juegos-de-grand-theft-auto-n">Rockstar Games</a> 
+                        regarding what he described as a 
+                        “ridiculous offer” for his song to appear in GTA 6: “Recently, my publishers contacted 
+                        me on behalf of Rockstar Games about the possibility of using Temptation in the new 
+                        Grand Theft Auto 6. Naturally excited about the immense wealth that was about to 
+                        come into my life, I scrolled to the end of the email with the offer.”
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p><a href="https://as.com/meristation/noticias/esta-es-la-ridicula-oferta-que-gta-6-ofrece-a-un-artista-para-que-su-cancion-aparezca-en-el-juego-n/">Para más información</a></p>
+            <a href="Indice.html">
+                <img src="FlechaAtras.png" style="width:42px;height:42px;">
+            </a>
+            <div class="valoracion">
+                <p>¿Te ha gustado esta noticia? Valórala:</p>
+                <form action="procesar_valoracion.html" method="post">
+                    <label>
+                        <input type="radio" name="valoracion" value="1"> 1
+                    </label>
+                    <label>
+                        <input type="radio" name="valoracion" value="2"> 2
+                    </label>
+                    <label>
+                        <input type="radio" name="valoracion" value="3"> 3
+                    </label>
+                    <label>
+                        <input type="radio" name="valoracion" value="4"> 4
+                    </label>
+                    <label>
+                        <input type="radio" name="valoracion" value="5"> 5
+                    </label>
+                    <br>
+                    <button type="submit" class="boton-valoracion">Enviar valoración</button>
+                </form>
+            </div>
+            <div class="suscripcion">
+                <p>¿Quieres recibir noticias en tu correo electrónico? Suscríbete:</p>
+                <form action="procesar_suscripcion.html" method="post">
+                    <label for="email">Introduce tu email:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    <br><br>
+                    <button type="submit" class="boton-suscripcion">Suscribirse</button>
+                </form>
+            </div>
+        </div>
     </body>
 
-   
-    
-   
 </html>

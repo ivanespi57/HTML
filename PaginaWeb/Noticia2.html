@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Noticia2</title>
-        <link rel = "stylesheet" href = "Estilos2.css">
-        <link rel = "stylesheet" href = "EstilosIndice.css">
+        <title>Noticia 2</title>
+        <link rel="stylesheet" href="Estilos2.css">
+        <link rel="stylesheet" href="EstilosIndice.css">
         <link rel="icon" type="image/x-icon" href="/home/daw/Documentos/HTML/Fotos/Favicon.ico">
     </head>
- 
- 
- <!--This is a poetry of Lorca that is centered in the middle -->
 
     <body>
         <div class="btn-group"> 
@@ -20,30 +17,105 @@
             <a href="libros.html" class="button">Libros</a>
         </div>
         
-        <h1>Lorca</h1>
-        <h2>Soneto de la dulce queja</h2>
-        <p>Tengo miedo a perder la maravilla<br>
-            de tus ojos de estatua, y el acento<br>
-            que de noche me pone en la mejilla<br>
-            la solitaria rosa de tu aliento.<br>
-            <br>
-            Tengo pena de ser en esta orilla<br>
-            tronco sin ramas; y lo que más siento<br>
-            es no tener la flor, pulpa o arcilla,<br>
-            para el gusano de mi sufrimiento.<br>
-            <br>
-            Si tú eres el tesoro oculto mío,<br>
-            si eres mi cruz y mi dolor mojado,<br>
-            si soy el perro de tu señorío,<br>
-            <br>
-            no me dejes perder lo que he ganado<br>
-            y decora las aguas de tu río<br>
-            con hojas de mi otoño enajenado.<br></p>
-        <hr>
-        <p><a href = "https://www.zendalibros.com/los-mejores-poemas-garcia-lorca/">Para más poemas</a></p>
-        <a href = "Indice.html">
-        <img src = "FlechaAtras.png" style="width:42px;height:42px;">
-        </a>
+        <p style="font-family:Arial;color:darkorange">- Actualidad</p>
+
+        <div class="contenedor-noticias">
+            <!-- Noticia original -->
+            <div class="noticia noticia-lorca">
+                <h1 class="titulo titulo-lorca">Lorca</h1>
+                <h2 class="subtitulo subtitulo-lorca"><i>Soneto de la dulce queja</i></h2>
+                <p>
+                    Tengo miedo a perder la maravilla<br>
+                    de tus ojos de estatua, y el acento<br>
+                    que de noche me pone en la mejilla<br>
+                    la solitaria rosa de tu aliento.<br>
+                    <br>
+                    Tengo pena de ser en esta orilla<br>
+                    tronco sin ramas; y lo que más siento<br>
+                    es no tener la flor, pulpa o arcilla,<br>
+                    para el gusano de mi sufrimiento.<br>
+                    <br>
+                    Si tú eres el tesoro oculto mío,<br>
+                    si eres mi cruz y mi dolor mojado,<br>
+                    si soy el perro de tu señorío,<br>
+                    <br>
+                    no me dejes perder lo que he ganado<br>
+                    y decora las aguas de tu río<br>
+                    con hojas de mi otoño enajenado.<br>
+                </p>
+            </div>
+
+            <!-- Traducción de la noticia -->
+            <div class="noticia noticia-lorca">
+                <h1 class="titulo titulo-lorca">Lorca</h1>
+                <h2 class="subtitulo subtitulo-lorca"><i>Sonnet of the Sweet Complaint</i></h2>
+                <p>
+                    I fear losing the wonder<br>
+                    of your statue-like eyes, and the accent<br>
+                    that at night places on my cheek<br>
+                    the solitary rose of your breath.<br>
+                    <br>
+                    I grieve to be on this shore<br>
+                    trunk without branches; and what I feel most<br>
+                    is not having the flower, pulp, or clay,<br>
+                    for the worm of my suffering.<br>
+                    <br>
+                    If you are my hidden treasure,<br>
+                    if you are my cross and my wet pain,<br>
+                    if I am the dog of your dominion,<br>
+                    <br>
+                    do not let me lose what I have gained<br>
+                    and adorn the waters of your river<br>
+                    with leaves of my deranged autumn.<br>
+                </p>
+            </div>
+        </div>
+
+        <div class="valoracion">
+            <p>¿Te ha gustado esta noticia? Valórala:</p>
+            <form action="procesar_valoracion.html" method="post">
+                <label for="valoracion">Selecciona una puntuación:</label>
+                <select name="valoracion" id="valoracion">
+                    <option value="1">1 - Muy mala</option>
+                    <option value="2">2 - Mala</option>
+                    <option value="3">3 - Regular</option>
+                    <option value="4">4 - Buena</option>
+                    <option value="5">5 - Excelente</option>
+                </select>
+                <br><br>
+                <button type="submit" class="boton-valoracion">Enviar valoración</button>
+            </form>
+        </div>
+
+        <div class="registro">
+            <h2>Registro de Usuario</h2>
+            <form action="procesar_registro.html" method="post" enctype="multipart/form-data">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br><br>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br><br>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <br><br>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br><br>
+
+                <label for="foto">Sube tu fotografía:</label>
+                <input type="file" id="foto" name="foto" accept="image/*" required>
+                <br><br>
+
+                <button type="submit" class="boton-registro">Registrar</button>
+            </form>
+        </div>
     </body>
- 
 </html>

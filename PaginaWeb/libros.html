@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias de Libros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 80%; /* Cambia el ancho total de la tabla de libros */
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 2px solid #4CAF50;
+            padding: 8px;
+            text-align: left;
+            height: 50px; /* Aumenta la altura de las filas */
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        /* Estilos para las columnas de la tabla */
+        .number-column {
+            width: 10%; /* Ancho de la columna de números */
+        }
+        .author-column {
+            width: 30%; /* Ancho de la columna del autor */
+        }
+        .title-column {
+            width: 50%; /* Ancho de la columna del título */
+        }
+        .price-column {
+            width: 20%; /* Ancho de la columna del precio */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Libros Recomendados</h1>
+
+    <table>
+        <tr>
+            <td><a href="Indice.html" class="button active">Índice</a></td>
+            <td><a href="Noticia1.html" class="button">Noticia 1</a></td>
+            <td><a href="Noticia2.html" class="button">Noticia 2</a></td>
+            <td><a href="Noticia3.html" class="button">Noticia 3</a></td>
+            <td><a href="Ventas.html" class="button">Ventas</a></td>
+            <td><a href="libros.html" class="button">Libros</a></td>
+        </tr>
+    </table>
+
+    <p>A continuación se presenta una lista de autores, títulos de libros y sus precios:</p>
+
+    <table>
+        <tr>
+            <th class="number-column">#</th> <!-- Nueva columna para los números -->
+            <th class="author-column">Autor</th>
+            <th class="title-column">Título del Libro</th>
+            <th class="price-column">Precio</th>
+        </tr>
+        <tr>
+            <td class="number-column">1</td>
+            <td class="author-column">Gabriel García Márquez</td>
+            <td class="title-column">Cien años de soledad</td>
+            <td class="price-column">15.99 €</td>
+        </tr>
+        <tr>
+            <td class="number-column">2</td>
+            <td class="author-column">J.K. Rowling</td>
+            <td class="title-column">Harry Potter y la piedra filosofal</td>
+            <td class="price-column">12.99 €</td>
+        </tr>
+        <tr>
+            <td class="number-column">3</td>
+            <td class="author-column">George Orwell</td>
+            <td class="title-column">1984</td>
+            <td class="price-column">10.50 €</td>
+        </tr>
+        <tr>
+            <td class="number-column">4</td>
+            <td class="author-column">Jane Austen</td>
+            <td class="title-column">Orgullo y prejuicio</td>
+            <td class="price-column">9.99 € </td>
+        </tr>
+        <tr>
+            <td class="number-column">5</td>
+            <td class="author-column">F. Scott Fitzgerald</td>
+            <td class="title-column">El gran Gatsby</td>
+            <td class="price-column">14.50 €</td>
+        </tr>
+        <tr>
+            <td class="number-column">6</td>
+            <td class="author-column">Harper Lee</td>
+            <td class="title-column">To Kill a Mockingbird</td>
+            <td class="price-column">11.75 €</td>
+        </tr>
+    </table>
+
+</body>
+</html>
